@@ -26,26 +26,26 @@ class SimpleCalculator{
 			int opp=scan.nextInt();
 			
 			//Logical opperation 
-				switch (opp){
-					case 1 :
-						System.out.println("Your answer is "+(num1+num2));
-					break ;
-					case 2 :
-						System.out.println("Your answer is "+(num1-num2));
-					break ;
-					case 3 :
-						System.out.println("Your answer is "+(num1*num2));
-					break ;
-					case 4 :
-						if (num2==0&&opp==4){ // this cause infinity
-							System.out.println("Please Click try again");
+			switch (opp){
+				case 1 :
+					System.out.println("Your answer is "+(num1+num2));
+				break ;
+				case 2 :
+					System.out.println("Your answer is "+(num1-num2));
+				break ;
+				case 3 :
+					System.out.println("Your answer is "+(num1*num2));
+				break ;
+				case 4 :
+					if (num2==0){           // this cause infinity
+						System.out.println("Please Click try again");
 						}
-						else{
+					else{
 						System.out.println("Your answer is "+(num1/num2));
 						}
-					break ;
-					default :
-						System.out.println("Make Sure You know how to use calculators");//for any other input goes to try again
+				break ;
+				default :
+					System.out.println("Make Sure You know how to use calculators");//for any other input goes to try again
 				
 				}
 				
